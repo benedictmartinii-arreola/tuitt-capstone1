@@ -4,15 +4,11 @@
 	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
-}
-
-.allerta-font {
-	font-family: 'Allerta Stencil', sans-serif;
 }
 
 /*start for testing only*/
@@ -95,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-item {
 	font-weight: bold;
 	color: #F2F3EE;
+	text-align: right;
 }
 
 .navbar-item:hover > a {
@@ -113,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*start footer*/
-footer {
+footer[class="container-fluid"] {
 	border-top: 10px solid #DF5272;
 }
 
@@ -164,11 +161,13 @@ a[class*="social-"]:hover {
 
 /*start landing intro*/
 .landing-intro {
-
+	/*nothing for now*/
 }
 
 .landing-jumbotron {
 	background-color: transparent;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .landing-pic {
@@ -176,19 +175,27 @@ a[class*="social-"]:hover {
 }
 
 .landing-intro-font {
-	 letter-spacing: 3px;
+	 letter-spacing: 1px;
 }
 
-.intro-hr {
-	border-color: #132E3F;
-	height: 5px;
+.landing-btn {
+	width: 100%;
+	border: 3px dashed #E8983F;
+	border-radius: 0px;
+	background-color: transparent;
+	color: #E8983F;
 }
 
+.landing-btn:hover {
+	border: 3px dashed transparent;
+	background-color: #E8983F;
+	color: #F2F3EE;
+}
 /*end landing intro*/
 
 /*start landing form*/
 .landing-form {
-	border-top: 10px solid #DF5272;
+	/*border-top: 10px solid #DF5272;*/
 }
 
 .form-call {
@@ -214,9 +221,18 @@ a[class*="social-"]:hover {
 	border-radius: 0px;
 }
 
-.form-button {
+.form-btn {
 	width: 100%;
+	border: 3px dashed #DF5272;
 	border-radius: 0px;
+	background-color: transparent;
+	color: #DF5272;
+}
+
+.form-btn:hover {
+	border: 3px dashed transparent;
+	background-color: #DF5272;
+	color: #F2F3EE;
 }
 
 /*end landing form*/
@@ -235,6 +251,7 @@ a[class*="social-"]:hover {
 	
 	/*end navbar*/
 
+
 	/*start footer*/
 	.footer-hr {
 		width: 40%;
@@ -246,14 +263,31 @@ a[class*="social-"]:hover {
 @media (min-width: 992px) {
 
 	/*start navbar*/
-	
+	.navbar-nav {
+		margin-left: auto;
+	}
+
+	.navbar-item {
+		margin-left: 30px;
+	}
 	/*end navbar*/
+
 
 	/*start footer*/
 	.footer-hr {
 		width: 35%;
 	}
 	/*end footer*/
+
+
+	/*start landing*/
+	/*start landing intro*/
+	.landing-jumbotron {
+		padding-right: 32px;
+		padding-left: 32px;
+	}
+	/*end landing intro*/
+	/*end landing*/
 }
 
 
