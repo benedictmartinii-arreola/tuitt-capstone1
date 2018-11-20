@@ -81,6 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 .font-color-white-2 {
 	color: #FFFFF2;
 }
+
+.font-shadow {
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5)
+}
 /*end font colors*/
 
 /*end colors*/
@@ -141,11 +145,6 @@ a[class*="social-"]:hover {
 	margin-left: auto;
 	width: 100%;
 }
-
-.copyright {
-	color: #F2F3EE;
-}
-
 /*end footer*/
 
 
@@ -163,56 +162,26 @@ a[class*="social-"]:hover {
 }
 
 #landing:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-}
-
-/*start landing-logo*/
-.landing-logo {
-	border-bottom: 5px solid #DF5272;
-}
-/*end landing logo*/
-
-/*start landing intro*/
-.landing-jumbotron {
-	background-color: transparent;
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.landing-pic {
-	height: 200px;
-}
-
-.landing-intro-font {
-	 letter-spacing: 1px;
-}
-
-.landing-btn {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(to bottom right, #E8983F, #DF5272, #132E3F);
+	opacity: .25;
 	width: 100%;
-	border: 3px dashed #E8983F;
-	border-radius: 0px;
-	background-color: transparent;
-	color: #E8983F;
 }
 
-.landing-btn:hover {
-	border: 3px dashed transparent;
-	background-color: #E8983F;
-	color: #F2F3EE;
+#landing:after {
+	content: "";
+	min-height: 50px;
+	width: 100%;
+	background-color: #132E3F;
+	z-index: 1;
 }
-/*end landing intro*/
 
 /*start landing form*/
-.landing-form {
-	/*border-top: 10px solid #DF5272;*/
-}
-
 .form-call {
 	position: relative;
 }
@@ -250,7 +219,28 @@ a[class*="social-"]:hover {
 	color: #F2F3EE;
 }
 
+.landing-margin {
+	margin-top: 100vh;
+}
+
 /*end landing form*/
+
+/*start landing more*/
+.landing-btn {
+	width: 100%;
+	border: 3px dashed #E8983F;
+	border-radius: 0px;
+	background-color: transparent;
+	color: #E8983F;
+}
+
+.landing-btn:hover {
+	border: 3px dashed transparent;
+	background-color: #E8983F;
+	color: #F2F3EE;
+}
+/*end landing more*/
+
 /*end landing*/
 
 
@@ -285,6 +275,7 @@ img[alt*="showcase-"] {
 .card-logo {
 	width: 98%;
 	margin: 1%;
+	height: 300px;
 	text-align: center;
 	border-radius: 0;
 	float: left;
@@ -350,12 +341,11 @@ img[alt*="showcase-"] {
 
 
 	/*start landing*/
-	/*start landing intro*/
-	.landing-jumbotron {
-		padding-right: 32px;
-		padding-left: 32px;
+	/*start landing form*/
+	.landing-margin {
+		margin-top: 96px;
 	}
-	/*end landing intro*/
+	/*end landing form*/
 	/*end landing*/
 
 
