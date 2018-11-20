@@ -3,7 +3,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -46,11 +45,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-color-black-2 {
-	background-color: #EEE;
+	background-color: #222;
 }
 
 .bg-color-white {
 	background-color: #F2F3EE;
+}
+
+.bg-color-white-2 {
+	background-color: #FFFFF2;
 }
 /*end bg colors*/
 
@@ -74,12 +77,21 @@ h1, h2, h3, h4, h5, h6 {
 .font-color-white {
 	color: #F2F3EE;
 }
+
+.font-color-white-2 {
+	color: #FFFFF2;
+}
 /*end font colors*/
 
 /*end colors*/
 
 
+
 /*start navbar*/
+navbar {
+	border-bottom: 10px solid #DF5272;
+}
+
 .navbar-brand:hover {
 	color: #F2F3EE;
 }
@@ -137,10 +149,11 @@ a[class*="social-"]:hover {
 /*end footer*/
 
 
+
 /*start landing*/
-.landing {
-	/*min-height: 100vh;*/
-	background-image: url("../images/landing/landing-1.jpg");
+#landing {
+	min-height: 100vh;
+	background-image: url("../images/landing/landing.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -149,7 +162,7 @@ a[class*="social-"]:hover {
 	
 }
 
-.landing:before {
+#landing:before {
   content: "";
   position: absolute;
   left: 0;
@@ -159,11 +172,13 @@ a[class*="social-"]:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 
-/*start landing intro*/
-.landing-intro {
-	/*nothing for now*/
+/*start landing-logo*/
+.landing-logo {
+	border-bottom: 5px solid #DF5272;
 }
+/*end landing logo*/
 
+/*start landing intro*/
 .landing-jumbotron {
 	background-color: transparent;
 	padding-right: 0;
@@ -236,13 +251,53 @@ a[class*="social-"]:hover {
 }
 
 /*end landing form*/
-
-/*start landing recommendation*/
-.landing-recommendation {
-
-}
-/*end landing recommendation*/
 /*end landing*/
+
+
+
+/*start about*/
+#about {
+	background-image: url("../images/about/about-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+img[alt="bianca arreola"] {
+	width: 70%;
+	border-radius: 50%;
+}
+
+img[alt*="showcase-"] {
+	width: 48%;
+}
+
+/*end about*/
+
+
+
+/*start portfolio*/
+/*end portfolio*/
+
+
+
+/*start clients*/
+.card-logo {
+	width: 98%;
+	margin: 1%;
+	text-align: center;
+	border-radius: 0;
+	float: left;
+}
+
+.logo {
+	width: 80%;
+	margin: 0 auto;
+	padding: 3px;
+}
+/*end clients*/
+
+
 
 /*media queries*/
 /*Medium devices (tablets, 768px and up)*/
@@ -257,6 +312,20 @@ a[class*="social-"]:hover {
 		width: 40%;
 	}
 	/*end footer*/
+
+
+	/*start about*/
+	img[alt*="showcase-"] {
+		width: 23%;
+	}
+	/*end about*/
+
+
+	/*start clients*/
+	.card-logo {
+		width: 48%;
+	}
+	/*end clients*/
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -288,6 +357,13 @@ a[class*="social-"]:hover {
 	}
 	/*end landing intro*/
 	/*end landing*/
+
+
+	/*start clients*/
+	.card-logo {
+		width: 23%;
+	}
+	/*end clients*/
 }
 
 

@@ -31,73 +31,21 @@
 	</head>
 	<body>
 
-		<!-- start navbar -->
-		<navbar class="navbar navbar-expand-lg bg-color-black sticky-top">
-
-			<!-- start navbar brand -->
-			<a class="navbar-brand font-color-white" href="index.html">
-				<span>B<span class="font-color-secondary">A</span> PH<span class="font-color-secondary">O</span>T<span class="font-color-secondary">O</span>GR<span class="font-color-secondary">A</span>PHY</span>
-			</a> <!-- end navbar brand -->
-
-			<!-- start navbar hamburger -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-selection-items">
-				<span class="navbar-toggler-icon"></span> <!-- !!!fix icon in css with class given!!! -->
-			</button> <!-- end navbar hamburger -->
-
-			<!-- start navbar-selection-item -->
-			<div id="navbar-selection-items" class="collapse navbar-collapse">
-
-				<!-- start navbar list -->
-				<ul class="navbar-nav">
-					
-					<!-- start home item -->
-					<li class="navbar-item">
-						<a class="nav-link font-color-white hvr-float active-page" href="index.html">
-							<span>Home</span>
-						</a>
-					</li> <!-- end home item -->
-
-					<!-- start portfolio item -->
-					<li class="navbar-item">
-						<a class="nav-link font-color-white hvr-float" href="#">
-							<span>Portfolio</span>
-						</a>
-					</li> <!-- end portfolio item -->
-
-					<!-- start clients item -->
-					<li class="navbar-item">
-						<a class="nav-link font-color-white hvr-float" href="#">
-							<span>Clients</span>
-						</a>
-					</li> <!-- end clients item -->
-
-					<!-- start faqs item -->
-					<li class="navbar-item">
-						<a class="nav-link font-color-white hvr-float" href="#">
-							<span>Prints</span>
-						</a>
-					</li> <!-- end faqs item -->
-
-				</ul> <!-- end navbar list -->
-
-			</div> <!-- end navbar-selection-item -->
-
-		</navbar> <!-- end navbar -->
-
-
-
-		<!-- Start Contents of Home -->
-
-		<!-- start content container -->
+		<!-- start landing container -->
 		<section class="container-fluid">
 			
 			<!-- start landing page -->
-			<section class="landing row">
+			<section id="landing" class="row">
 				
+				<!-- start landing-logo -->
+				<div class="landing-logo col-12 bg-color-black text-center mb-auto">
+					<h1 class=" font-color-white px-1 py-3">B<span class="font-color-secondary">A</span> PH<span class="font-color-secondary">O</span>T<span class="font-color-secondary">O</span>GR<span class="font-color-secondary">A</span>PHY</h1>
+				</div> <!-- end landing-logo -->
+
 				<!-- start introduction -->
 				<div class="landing-intro col-md-10 offset-md-1 col-lg-5 offset-lg-1 mt-5 p-0 animated slideInLeft">
 					<div class="jumbotron landing-jumbotron text-center pt-0">
-						<h1 class="font-color-white bg-color-black landing-intro-font px-3 py-3">BIANCA ARREOLA</h1>
+						<h2 class="font-color-white bg-color-black landing-intro-font px-3 py-3">BIANCA ARREOLA</h2>
 						<h2 class="font-color-white bg-color-secondary landing-intro-font px-3 py-3 font-weight-normal">Manila-Based Food Photographer</h2>
 						<div class="font-color-white bg-color-black landing-intro-font px-3 py-3 mb-3 font-weight-light">
 							<h3>Looking for a Photographer?</h3> 
@@ -119,44 +67,151 @@
 					<form class="p-3" action="mailto:bmnarreola@gmail.com?Subject=Bianca%20Arreola's%20Website%20-%20Message" method="post" enctype="text/plain">
 						<div class="form-group">
 							<label for="form-name" class="font-color-white font-weight-bold">Your Name *</label>
-							<input id="form-name" class="form-control" type="text" name="name" autocomplete="off" required>
+							<input id="form-name" class="form-control" type="text" name="name" autocomplete="off" required placeholder="Bianca Arreola">
 						</div> <!-- end of name input -->
 
 						<div class="form-group">
 							<label for="form-email" class="font-color-white font-weight-bold">Your E-mail Address *</label>
-							<input id="form-email" class="form-control" type="email" name="email" autocomplete="off" required>
+							<input id="form-email" class="form-control" type="email" name="email" autocomplete="off" required placeholder="bmnarreola@gmail.com">
+						</div> <!-- end of email input -->
+
+						<div class="form-group">
+							<label for="form-contact" class="font-color-white font-weight-bold">Your Contact Number *</label>
+							<input id="form-contact" class="form-control" type="number" name="contact" autocomplete="off" required placeholder="09XX XXX XXXX">
 						</div> <!-- end of email input -->
 
 						<div class="form-group">
 							<label for="form-textarea" class="font-color-white font-weight-bold">Your Message *</label>
-							<textarea id="form-textarea" class="form-control" name="message" rows="3" required></textarea>
+							<textarea id="form-textarea" class="form-control" name="message" rows="2" required placeholder="I would like to inquire about.."></textarea>
 						</div> <!-- end of message textarea -->
 
-						<button type="submit" class="btn form-btn font-weight-bold mb-4">SEND MESSAGE</button>
+						<button type="submit" class="btn form-btn font-weight-bold">SEND MESSAGE</button>
 
 					</form> <!-- end form input -->
 
-				</div>
+				</div> <!-- end form -->
 
-				<!-- end form -->
-
-				<!-- start recommendation -->
-				<div class="landing-recommendation col-12 p-4 bg-color-black font-color-white text-center">
+				<!-- start quote -->
+				<div class="landing-quote col-12 p-4 bg-color-black font-color-white text-center">
 					<blockquote class="blockquote" cite="https://www.brainyquote.com/quotes/robert_capa_348060">
   						<p class="mb-0">The pictures are there, and you just take them.</p>
   						<footer class="blockquote-footer mb-0">Robert Capa</footer>
 					</blockquote>
-				</div> <!-- end recommendation -->
-
+				</div> <!-- end quote -->
 
 			</section> <!-- end landing page -->
 
-		</section> <!-- end content container -->
+		</section> <!-- end landing container -->
 
-		<!-- for testing only -->
-		<!-- <div style="background-color: white; height: 100px;"></div> -->
 
-		<!-- End Contents of Home -->
+
+
+		<!-- start navbar -->
+		<navbar class="navbar navbar-expand-lg bg-color-black sticky-top">
+
+			<!-- start navbar brand -->
+			<a class="navbar-brand font-color-white" href="index.html">
+				<span>B<span class="font-color-secondary">A</span> PH<span class="font-color-secondary">O</span>T<span class="font-color-secondary">O</span>GR<span class="font-color-secondary">A</span>PHY</span>
+			</a> <!-- end navbar brand -->
+
+			<!-- start navbar hamburger -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-selection-items">
+				<span class="navbar-toggler-icon"></span> <!-- !!!fix icon in css with class given!!! -->
+			</button> <!-- end navbar hamburger -->
+
+			<!-- start navbar-selection-item -->
+			<div id="navbar-selection-items" class="collapse navbar-collapse">
+
+				<!-- start navbar list -->
+				<ul class="navbar-nav">
+					
+					<!-- start about item -->
+					<li class="navbar-item">
+						<a class="nav-link font-color-white hvr-float active-page" href="index.html#about">
+							<span>About</span>
+						</a>
+					</li> <!-- end about item -->
+
+					<!-- start portfolio item -->
+					<li class="navbar-item">
+						<a class="nav-link font-color-white hvr-float" href="portfolio.html">
+							<span>Portfolio</span>
+						</a>
+					</li> <!-- end portfolio item -->
+
+					<!-- start clients item -->
+					<li class="navbar-item">
+						<a class="nav-link font-color-white hvr-float" href="clients.html">
+							<span>Clients</span>
+						</a>
+					</li> <!-- end clients item -->
+
+					<!-- start prints item -->
+					<li class="navbar-item">
+						<a class="nav-link font-color-white hvr-float" href="prints.html">
+							<span>Prints</span>
+						</a>
+					</li> <!-- end prints item -->
+
+				</ul> <!-- end navbar list -->
+
+			</div> <!-- end navbar-selection-item -->
+
+		</navbar> <!-- end navbar -->
+
+
+
+
+		<!-- start about container -->
+		<section class="container-fluid">
+			
+			<!-- start about me -->
+			<section id="about" class="row">
+				
+				<!-- start about header -->
+				<div class="col-12 p-3">
+					<div class="text-center">
+						<h2 class="font-color-black-2">ABOUT</h2>
+					</div>
+				</div> <!-- end about header -->
+
+				<!-- start about pic -->
+				<div class="col-md-10 offset-md-1 col-lg-3 offset-lg-2">
+					<div class="p-3 mb-3 text-center">
+						<img src="assets/images/about/about-me.jpeg" alt="bianca arreola">
+					</div>
+				</div> <!-- end about pic -->
+
+				<!-- start about description -->
+				<div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0">
+					<div class="p-3 mb-3">
+						<h3 class="font-color-black-2">My background</h3>
+						<p class="font-color-black-2">I'm an experienced Freelance Photographer with a demonstrated history of working in the arts and crafts industry. Skilled in Photography, Product Photography, Adobe Premiere Pro, Lightroom, and Digital Photography. Strong arts and design professional with a Bachelor’s Degree focused in Photography from De La Salle-College of Saint Benilde.</p>
+					</div>
+				</div> <!-- end about description -->
+
+				<!-- start about showcase -->
+				<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				 	<div class="mb-4 text-center">
+						<img src="assets/images/about/about-pic-1.jpg" alt="showcase-1">
+						<img src="assets/images/about/about-pic-2.jpg" alt="showcase-2">
+						<img src="assets/images/about/about-pic-3.jpg" alt="showcase-3">
+						<img src="assets/images/about/about-pic-4.jpg" alt="showcase-4">
+				 	</div>
+				</div> <!-- end about showcase -->
+
+				<!-- start google maps iframe -->
+				<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+					<div class="p-3 mb-5">
+						<h3 class="font-color-black-2">Where we can meet-up</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.068356565273!2d120.99423972472648!3d14.56335236752623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c979391be0bb%3A0xc56ec6a893bb4bd5!2sMcDonald&#39;s!5e0!3m2!1sen!2sph!4v1542700140172" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div> <!-- end google maps iframe -->
+
+			</section> <!-- end about me -->
+
+		</section> <!-- end about container -->
+
 
 
 
@@ -166,32 +221,37 @@
 			<!-- start footer row -->
 			<div class="row">
 				
-				<!-- start footer column -->
-				<div class="col-12 p-4 text-center bg-color-black">
-					
-					<!-- start social media -->
-					<div>
-						<a class="social-facebook font-color-white hvr-float mx-3" href="https://www.facebook.com/arreolabianca" target="_blank">
-							<i class="fab fab-social fa-facebook-f"></i>
-						</a>
-						<a class="social-instagram font-color-white hvr-float mx-3" href="https://www.instagram.com/arreolabianca/" target="_blank">
-							<i class="fab fab-social fa-instagram"></i>
-						</a>
-						<a class="social-linkedin font-color-white hvr-float mx-3" href="https://www.linkedin.com/in/bianca-marie-arreola-5a5829133/" target="_blank">
-							<i class="fab fab-social fa-linkedin-in"></i>
-						</a>
-					</div> <!-- end social media -->
+				<!-- start footer body -->
+				<div class="text-center bg-color-black w-100">
 
-					<!-- start footer horizontal divider -->
-					<hr class="footer-hr">
-					<!-- end footer horizontal divider -->
+					<!-- start footer column -->
+					<div class="col-12 p-4">
+						
+						<!-- start social media -->
+						<div>
+							<a class="social-facebook font-color-white hvr-float mx-3" href="https://www.facebook.com/arreolabianca" target="_blank">
+								<i class="fab fab-social fa-facebook-f"></i>
+							</a>
+							<a class="social-instagram font-color-white hvr-float mx-3" href="https://www.instagram.com/arreolabianca/" target="_blank">
+								<i class="fab fab-social fa-instagram"></i>
+							</a>
+							<a class="social-linkedin font-color-white hvr-float mx-3" href="https://www.linkedin.com/in/bianca-marie-arreola-5a5829133/" target="_blank">
+								<i class="fab fab-social fa-linkedin-in"></i>
+							</a>
+						</div> <!-- end social media -->
 
-					<!-- start copyright -->
-					<p class="copyright font-color-white">
-						<small>BIANCA MARIE ARREOLA <span class="font-color-main">&copy; 2018</span></small>
-					</p>
+						<!-- start footer horizontal divider -->
+						<hr class="footer-hr">
+						<!-- end footer horizontal divider -->
 
-				</div> <!-- end footer column -->
+						<!-- start copyright -->
+						<p class="copyright font-color-white">
+							<small>BIANCA MARIE ARREOLA <span class="font-color-main">&copy; 2018</span></small>
+						</p> <!-- end copyright -->
+
+					</div> <!-- end footer column -->
+
+				</div> <!-- end footer body -->
 
 			</div> <!-- end footer row -->
 
