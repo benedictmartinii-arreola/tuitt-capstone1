@@ -3,7 +3,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Hind Siliguri', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -329,6 +329,25 @@ img[alt*="showcase-"] {
 
 
 /*start portfolio*/
+.portfolio-pic-box {
+	position: relative;
+}
+
+.portfolio-pic-box > a {
+	font-size: 4vh;
+	z-index: 1;
+	position: absolute;
+	transform: (100%, 100%);
+	bottom: 0;
+	right: 20px;
+	color: #E8983F;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.portfolio-pic-box > a:hover {
+	color: #E8983F;
+}
 /*end portfolio*/
 
 
@@ -346,9 +365,10 @@ img[alt*="showcase-"] {
 
 .card-body {
 	position: relative;
+	min-height: 100px;
 }
 
-.card-body > div {
+.card-body > h5 {
 	display: block;
 	position: absolute;
 	top: 50%;
@@ -365,24 +385,6 @@ img[alt*="showcase-"] {
 
 .card-title {
 	margin-bottom: 20px;
-}
-
-.clients-btn {
-	background-color: transparent;
-	border: 3px dashed #E8983F;
-	color: #E8983F;
-	text-decoration: none;
-	border-radius: 0;
-	padding-bottom: 3px;
-	padding-top: 3px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.clients-btn:hover {
-	background-color: #E8983F;
-	border: 3px solid #E8983F;
-	color: #F2F3EE;
 }
 /*end clients*/
 
