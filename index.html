@@ -31,23 +31,33 @@
 	</head>
 	<body>
 
-		<!-- start landing container -->
-		<section class="container-fluid">
+		<!-- start landing page -->
+		<section id="landing" class="row no-gutters" data-ride="carousel">
 			
-			<!-- start landing page -->
-			<section id="landing" class="row">
-				
-				<!-- start landing-logo -->
-				<div class="col-12 mb-auto">
-					<h1 class="font-shadow font-color-white px-1 py-3"><small>B<span class="font-color-secondary">A</span> PH<span class="font-color-secondary">O</span>T<span class="font-color-secondary">O</span>GR<span class="font-color-secondary">A</span>PHY</small></h1>
-				</div> <!-- end landing-logo -->
+			<!-- start landing-logo -->
+			<div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-1">
+				<!-- start jcontainer -->
+				<div class="intro-jcontainer animated slideInLeft">
+					<div class="jumbotron intro-jbody bg-color-transparent p-1">
+						<div class="intro-jtext">
+							<h1 class="font-shadow font-color-white">B<span class="font-color-secondary">A</span> PH<span class="font-color-secondary">O</span>T<span class="font-color-secondary">O</span>GR<span class="font-color-secondary">A</span>PHY</h1>
+							<a class="btn intro-btn font-color-secondary font-shadow animated pulse infinite faster" href="#about"><i class="fas fa-chevron-down"></i></a>
+						</div>
+					</div>
+				</div> <!-- end jcontainer -->
+			</div> <!-- end landing-logo -->
 
-				<!-- start form -->
-				<div class="col-md-10 offset-md-1 col-lg-5 offset-lg-6 bg-color-black landing-margin p-0 animated slideInRight">
-					
+
+			<!-- start form -->
+			<div class="col-md-10 offset-md-1 col-lg-5 offset-lg-0">
+				
+				<!-- start form body -->
+				<div class="intro-form bg-color-black landing-margin animated slideInRight">
+
 					<!-- start form call to action -->
-					<div class="form-call bg-color-white text-center p-3">
+					<div class="form-call bg-color-white text-center pt-3 pb-2 px-4">
 						<h2 class="font-color-black">Let's work together!</h2>
+						<p class="font-color-black-2"><small>fill-up the form below to send me an e-mail to <span class="font-color-main">bmnarreola@gmail.com</span> or text <span class="font-color-main">0966.685.0814</span></small></p>
 					</div> <!-- end form call to action -->
 
 					<!-- start form input -->
@@ -69,24 +79,23 @@
 
 						<div class="form-group">
 							<label for="form-textarea" class="font-color-white font-weight-bold">Your Message *</label>
-							<textarea id="form-textarea" class="form-control" name="message" rows="4" required placeholder="I would like to inquire about.."></textarea>
+							<textarea id="form-textarea" class="form-control" name="message" rows="2" required placeholder="I would like to inquire about.."></textarea>
 						</div> <!-- end of message textarea -->
 
 						<button type="submit" class="btn form-btn font-weight-bold">SEND MESSAGE</button>
 
 					</form> <!-- end form input -->
 
-				</div> <!-- end form -->
+				</div> <!-- end form body-->
 
-			</section> <!-- end landing page -->
+			</div> <!-- end form-->
 
-		</section> <!-- end landing container -->
-
+		</section> <!-- end landing page -->
 
 
 
 		<!-- start navbar -->
-		<navbar class="navbar navbar-expand-lg bg-color-black sticky-top">
+		<nav class="navbar navbar-expand-lg bg-color-black">
 
 			<!-- start navbar brand -->
 			<a class="navbar-brand font-color-white" href="index.html">
@@ -95,7 +104,7 @@
 
 			<!-- start navbar hamburger -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-selection-items">
-				<span class="navbar-toggler-icon"></span> <!-- !!!fix icon in css with class given!!! -->
+				<span class="navbar-toggler-icon"></span>
 			</button> <!-- end navbar hamburger -->
 
 			<!-- start navbar-selection-item -->
@@ -104,12 +113,35 @@
 				<!-- start navbar list -->
 				<ul class="navbar-nav">
 					
-					<!-- start about item -->
-					<li class="navbar-item">
-						<a class="nav-link font-color-white hvr-float active-page" href="index.html#about">
-							<span>About</span>
-						</a>
-					</li> <!-- end about item -->
+					<!-- start home item -->
+					<li class="navbar-item dropdown">
+
+						<a class="nav-link dropdown-toggle font-color-white hvr-float active-page" data-toggle="dropdown" href="index.html">Home</a>
+
+						<div class="dropdown-menu bg-color-black">
+
+							<a class="dropdown-item font-color-white hvr-float" href="index.html#landing">
+							<span>Main</span></a>
+
+							<div class="dropdown-divider mx-4"></div>
+
+							<a class="dropdown-item font-color-white hvr-float" href="index.html#about-background">
+							<span>Background</span></a>
+
+							<a class="dropdown-item font-color-white hvr-float" href="index.html#about-mission">
+							<span>Mission</span></a>
+
+							<a class="dropdown-item font-color-white hvr-float" href="index.html#about-vision">
+							<span>Vision</span></a>
+
+							<a class="dropdown-item font-color-white hvr-float" href="index.html#about-services">
+							<span>Services</span></a>
+
+							<a class="dropdown-item font-color-white hvr-float" href="index.html#about-map">
+							<span>Meeting Place</span></a>
+			
+						</div>
+					</li> <!-- end home item -->
 
 					<!-- start portfolio item -->
 					<li class="navbar-item">
@@ -136,105 +168,161 @@
 
 			</div> <!-- end navbar-selection-item -->
 
-		</navbar> <!-- end navbar -->
+		</nav> <!-- end navbar -->
 
 
 
+		<!-- start about me -->
+		<section class="row no-gutters">
 
-		<!-- start about container -->
-		<section class="container-fluid">
+			<nav id="about-breadcrumb" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+			  <ol class="breadcrumb bg-color-transparent my-3">
+			    <li class="breadcrumb-item active">About</li>
+			    <li class="breadcrumb-item"><a href="#about-background">Background</a></li>
+			    <li class="breadcrumb-item"><a href="#about-mission">Mission</a></li>
+			    <li class="breadcrumb-item"><a href="#about-vision">Vision</a></li>
+			    <li class="breadcrumb-item"><a href="#about-services">Services</a></li>
+			    <li class="breadcrumb-item"><a href="#about-map">Meeting Place</a></li>
+			  </ol>
+			</nav>
 			
-			<!-- start about me -->
-			<section id="about" class="row">
-				
-				<!-- start about header -->
-				<div class="col-12 p-3">
-					<div class="text-center">
-						<h2 class="font-color-black-2">ABOUT</h2>
+			<!-- start about header -->
+			<section id="about" class="col-12 p-3">
+				<div class="text-center">
+					<h2 class="font-color-black-2">ABOUT</h2>
+				</div>
+			</section> <!-- end about header -->
+
+			<!-- start about pic -->
+			<section id="about-me" class="col-md-10 offset-md-1 col-lg-3 offset-lg-2">
+				<div class="p-3 mb-3 text-center">
+					<img src="assets/images/about/about-me.jpeg" alt="bianca arreola">
+				</div>
+			</section> <!-- end about pic -->
+
+			<!-- start about description -->
+			<section id="about-background" class="col-md-10 offset-md-1 col-lg-5 offset-lg-0">
+				<div class="p-3 mb-3">
+					<h3 class="font-color-black-2">My background</h3>
+					<p class="font-color-black-2 text-justify">I'm Bianca Arreola. I'm an experienced Freelance Photographer with a demonstrated history of working in the arts and crafts industry. Skilled in Photography, Product Photography, Adobe Premiere Pro, Lightroom, and Digital Photography. Strong arts and design professional with a Bachelor’s Degree focused in Photography from De La Salle-College of Saint Benilde.</p>
+					<div class="text-right">
+						<a class="about-top hvr-pulse" href="#about-breadcrumb"><i class="fas fa-chevron-up"></i> back to top</a>
 					</div>
-				</div> <!-- end about header -->
+				</div>
+			</section> <!-- end about description -->
 
-				<!-- start about pic -->
-				<div class="col-md-10 offset-md-1 col-lg-3 offset-lg-2">
-					<div class="p-3 mb-3 text-center">
-						<img src="assets/images/about/about-me.jpeg" alt="bianca arreola">
+			<!-- start mission -->
+			<section id="about-mission" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				<div class="p-3 mb-3">
+					<h3 class="font-color-black-2">Mission</h3>
+					<p class="font-color-black-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="text-right">
+						<a class="about-top hvr-pulse" href="#about-breadcrumb"><i class="fas fa-chevron-up"></i> back to top</a>
 					</div>
-				</div> <!-- end about pic -->
+				</div>
+			</section> <!-- end mission -->
 
-				<!-- start about description -->
-				<div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0">
-					<div class="p-3 mb-3">
-						<h3 class="font-color-black-2">My background</h3>
-						<p class="font-color-black-2">I'm Bianca Arreola. I'm an experienced Freelance Photographer with a demonstrated history of working in the arts and crafts industry. Skilled in Photography, Product Photography, Adobe Premiere Pro, Lightroom, and Digital Photography. Strong arts and design professional with a Bachelor’s Degree focused in Photography from De La Salle-College of Saint Benilde.</p>
+			<!-- start vision -->
+			<section id="about-vision" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				<div class="p-3 mb-3">
+					<h3 class="font-color-black-2">Vision</h3>
+					<p class="font-color-black-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="text-right">
+						<a class="about-top hvr-pulse" href="#about-breadcrumb"><i class="fas fa-chevron-up"></i> back to top</a>
 					</div>
-				</div> <!-- end about description -->
+				</div>
+			</section> <!-- end vision -->
 
-				<!-- start about showcase -->
-				<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-				 	<div class="mb-4 text-center">
-						<img class="p-1 m-0" src="assets/images/about/about-pic-1.jpg" alt="showcase-1">
-						<img class="p-1 m-0" src="assets/images/about/about-pic-2.jpg" alt="showcase-2">
-						<img class="p-1 m-0" src="assets/images/about/about-pic-3.jpg" alt="showcase-3">
-						<img class="p-1 m-0" src="assets/images/about/about-pic-4.jpg" alt="showcase-4">
-				 	</div>
-				</div> <!-- end about showcase -->
+			<!-- start about showcase -->
+			<figure id="about-showcase" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+			 	<div class="mb-4 text-center">
+					<img class="p-1 m-0" src="assets/images/about/about-pic-1.jpg" alt="showcase-1">
+					<img class="p-1 m-0" src="assets/images/about/about-pic-2.jpg" alt="showcase-2">
+					<img class="p-1 m-0" src="assets/images/about/about-pic-3.jpg" alt="showcase-3">
+					<img class="p-1 m-0" src="assets/images/about/about-pic-4.jpg" alt="showcase-4">
+			 	</div>
+			 	<figcaption class="mx-3 font-color-faded">These pictures were exhibited when I was in college at 'x' last Xxxx 00, 0000.</figcaption>
+			</figure> <!-- end about showcase -->
 
-				<!-- start google maps iframe -->
-				<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-					<div class="p-3 mb-5">
-						<h3 class="font-color-black-2">Where we can meet-up</h3>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.068356565273!2d120.99423972472648!3d14.56335236752623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c979391be0bb%3A0xc56ec6a893bb4bd5!2sMcDonald&#39;s!5e0!3m2!1sen!2sph!4v1542700140172" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!-- start services -->
+			<section id="about-services" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				<div class="p-3 mb-3">
+					<h3 class="font-color-black-2">Services</h3>
+					<p class="font-color-black-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="text-right">
+						<a class="about-top hvr-pulse" href="#about-breadcrumb"><i class="fas fa-chevron-up"></i> back to top</a>
 					</div>
-				</div> <!-- end google maps iframe -->
+				</div>
+			</section> <!-- end services -->
 
-			</section> <!-- end about me -->
+			<!-- start google maps iframe -->
+			<section id="about-map" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				<div class="p-3 mb-5">
+					<h3 class="font-color-black-2">Where we can meet-up</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.068356565273!2d120.99423972472648!3d14.56335236752623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c979391be0bb%3A0xc56ec6a893bb4bd5!2sMcDonald&#39;s!5e0!3m2!1sen!2sph!4v1542700140172" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="text-right">
+						<a class="about-top hvr-pulse" href="#about-breadcrumb"><i class="fas fa-chevron-up"></i> back to top</a>
+					</div>
+				</div>
+			</section> <!-- end google maps iframe -->
 
-		</section> <!-- end about container -->
-
+		</section> <!-- end about me -->
 
 
 
 		<!-- start footer -->
-		<footer class="container-fluid">
-
-			<!-- start footer row -->
-			<div class="row">
-				
+		<!-- start footer row -->
+		<footer class="row no-gutters">
+			
+			<!-- start footer column -->
+			<div class="col-12">
+					
 				<!-- start footer body -->
-				<div class="text-center bg-color-black w-100">
+				<div class="text-center bg-color-black w-100 p-4">
 
-					<!-- start footer column -->
-					<div class="col-12 p-4">
-						
-						<!-- start social media -->
-						<div>
-							<a class="social-facebook font-color-white hvr-float mx-3" href="https://www.facebook.com/arreolabianca" target="_blank">
-								<i class="fab fab-social fa-facebook-f"></i>
-							</a>
-							<a class="social-instagram font-color-white hvr-float mx-3" href="https://www.instagram.com/arreolabianca/" target="_blank">
-								<i class="fab fab-social fa-instagram"></i>
-							</a>
-							<a class="social-linkedin font-color-white hvr-float mx-3" href="https://www.linkedin.com/in/bianca-marie-arreola-5a5829133/" target="_blank">
-								<i class="fab fab-social fa-linkedin-in"></i>
-							</a>
-						</div> <!-- end social media -->
+					<!-- start social media -->
+					<div>
+						<a class="social-facebook font-color-white hvr-float mx-3" href="https://www.facebook.com/arreolabianca" target="_blank">
+							<i class="fab fab-social fa-facebook-f"></i>
+						</a>
+						<a class="social-instagram font-color-white hvr-float mx-3" href="https://www.instagram.com/arreolabianca/" target="_blank">
+							<i class="fab fab-social fa-instagram"></i>
+						</a>
+						<a class="social-linkedin font-color-white hvr-float mx-3" href="https://www.linkedin.com/in/bianca-marie-arreola-5a5829133/" target="_blank">
+							<i class="fab fab-social fa-linkedin-in"></i>
+						</a>
+					</div> <!-- end social media -->
 
-						<!-- start footer horizontal divider -->
-						<hr class="footer-hr">
-						<!-- end footer horizontal divider -->
+					<!-- start footer horizontal divider -->
+					<hr class="footer-hr">
+					<!-- end footer horizontal divider -->
 
-						<!-- start copyright -->
-						<p class="copyright font-color-white">
-							<small>BIANCA MARIE ARREOLA <span class="font-color-main">&copy; 2018</span></small>
-						</p> <!-- end copyright -->
-
-					</div> <!-- end footer column -->
+					<!-- start copyright -->
+					<p class="copyright font-color-white">
+						<small>BIANCA MARIE ARREOLA <span class="font-color-main">&copy; 2018</span></small>
+					</p> <!-- end copyright -->
 
 				</div> <!-- end footer body -->
 
-			</div> <!-- end footer row -->
+			</div> <!-- end footer column -->
 
-		</footer> <!-- end footer -->
+		</footer> <!-- end footer row -->
+		<!-- end footer -->
 
 
 		<!-- Optional JavaScript -->

@@ -4,6 +4,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Nunito', sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 	/*border: 1px solid black;*/
 }
 
-/*html {
+html {
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -24,9 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar {
     width: 0px; 
     background: transparent; 
-}*/
+}
 
 /*end for testing only*/
+
 
 
 /*start colors*/
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-color-black-2 {
-	background-color: #222;
+	background-color: #333;
 }
 
 .bg-color-white {
@@ -54,6 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-color-white-2 {
 	background-color: #FFFFF2;
+}
+
+.bg-color-transparent {
+	background-color: transparent;
+}
+
+.box-shadow {
+	box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 /*end bg colors*/
 
@@ -82,8 +92,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: #FFFFF2;
 }
 
+.font-color-faded {
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .font-shadow {
-	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5)
+	text-shadow:
+	1px 1px 1px rgba(0, 0, 0, 0.4),
+	-1px 1px 1px rgba(0, 0, 0, 0.4),
+	1px -1px 1px rgba(0, 0, 0, 0.4),
+	1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 /*end font colors*/
 
@@ -104,14 +122,27 @@ navbar {
 	background-image: url(../images/icons/bars-solid.svg);
 }
 
+.dropdown-menu {
+	border-radius: 0;
+	border-style: none;
+}
+
 .navbar-item {
 	font-weight: bold;
 	color: #F2F3EE;
-	text-align: right;
+}
+
+.dropdown-item {
+	color: #F2F3EE;
 }
 
 .navbar-item:hover > a {
 	color: #E8983F;
+}
+
+.dropdown-item:hover {
+	color: #E8983F;
+	background-color: transparent;
 }
 
 .active-page {
@@ -126,7 +157,7 @@ navbar {
 
 
 /*start footer*/
-footer[class="container-fluid"] {
+footer {
 	border-top: 10px solid #DF5272;
 }
 
@@ -158,7 +189,6 @@ a[class*="social-"]:hover {
 	background-position: center;
 	background-attachment: fixed;
 	position: relative;
-	
 }
 
 #landing:before {
@@ -173,15 +203,43 @@ a[class*="social-"]:hover {
 	width: 100%;
 }
 
-#landing:after {
-	content: "";
-	min-height: 50px;
-	width: 100%;
-	background-color: #132E3F;
-	z-index: 1;
+
+/*start landing intro*/
+.intro-jcontainer {
+	height: 100vh;
 }
 
+.intro-jbody{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.intro-jtext {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.intro-btn {
+	text-decoration: none;
+	font-size: 75px;
+}
+
+.intro-btn:hover {
+	text-decoration: none;
+	color: #E8983F;
+}
+/*end landing intro*/
+
+
 /*start landing form*/
+.intro-form {
+	min-height: 50vh;
+}
+
 .form-call {
 	position: relative;
 }
@@ -218,11 +276,6 @@ a[class*="social-"]:hover {
 	background-color: #DF5272;
 	color: #F2F3EE;
 }
-
-.landing-margin {
-	margin-top: 100vh;
-}
-
 /*end landing form*/
 
 /*start landing more*/
@@ -247,10 +300,10 @@ a[class*="social-"]:hover {
 
 /*start about*/
 #about {
-	background-image: url("../images/about/about-bg.jpg");
+	/*background-image: url("../images/about/about-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center;*/
 }
 
 img[alt="bianca arreola"] {
@@ -262,6 +315,15 @@ img[alt*="showcase-"] {
 	width: 48%;
 }
 
+.about-top {
+	text-decoration: none;
+	color: #E8983F;
+}
+
+.about-top:hover {
+	text-decoration: none;
+	color: #E8983F;
+}
 /*end about*/
 
 
@@ -275,10 +337,24 @@ img[alt*="showcase-"] {
 .card-logo {
 	width: 98%;
 	margin: 1%;
-	height: 300px;
+	min-height: 300px;
 	text-align: center;
 	border-radius: 0;
 	float: left;
+	border: 0;
+}
+
+.card-body {
+	position: relative;
+}
+
+.card-body > div {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .logo {
@@ -286,7 +362,35 @@ img[alt*="showcase-"] {
 	margin: 0 auto;
 	padding: 3px;
 }
+
+.card-title {
+	margin-bottom: 20px;
+}
+
+.clients-btn {
+	background-color: transparent;
+	border: 3px dashed #E8983F;
+	color: #E8983F;
+	text-decoration: none;
+	border-radius: 0;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.clients-btn:hover {
+	background-color: #E8983F;
+	border: 3px solid #E8983F;
+	color: #F2F3EE;
+}
 /*end clients*/
+
+
+
+/*start prints*/
+
+/*end prints*/
 
 
 
@@ -332,22 +436,17 @@ img[alt*="showcase-"] {
 	}
 	/*end navbar*/
 
+	/*start landing*/
+	.intro-form {
+		min-height: 100vh;
+	}
+	/*end landing*/
 
 	/*start footer*/
 	.footer-hr {
 		width: 35%;
 	}
 	/*end footer*/
-
-
-	/*start landing*/
-	/*start landing form*/
-	.landing-margin {
-		margin-top: 96px;
-	}
-	/*end landing form*/
-	/*end landing*/
-
 
 	/*start clients*/
 	.card-logo {
