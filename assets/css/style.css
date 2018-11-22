@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+img {
+	pointer-events: none;
+}
+
 clear:after {
 	clear: both;
 	content: "";
@@ -340,14 +344,13 @@ img[alt*="showcase-"] {
 }
 
 .portfolio-pic-box > a {
-	font-size: 4vh;
+	font-size: 3vh;
 	z-index: 1;
 	position: absolute;
 	transform: (100%, 100%);
 	bottom: 0;
-	right: 20px;
+	right: 10px;
 	color: #E8983F;
-	opacity: 0.6;
 	text-decoration: none;
 }
 
@@ -392,6 +395,16 @@ img[alt*="showcase-"] {
 .card-title {
 	margin-bottom: 20px;
 }
+
+.clients-carousel {
+	height: 300px;
+	overflow: hidden;
+}
+
+.clients-carousel-item-image {
+	height: 300px;
+	margin: 0 auto;
+}
 /*end clients*/
 
 
@@ -421,6 +434,7 @@ img[alt*="showcase-"] {
 	border-radius: 0px;
 	background-color: transparent;
 	color: #DF5272;
+	padding: 5px 25px;
 }
 
 .modal-btn:hover {
@@ -432,6 +446,42 @@ img[alt*="showcase-"] {
 .modal-content, .modal-header {
 	border-radius: 0;
 	border: none;
+}
+
+.close {
+	font-size: 2.0rem;
+}
+
+.prints-call {
+	position: relative;
+}
+
+.prints-call:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-top-color: #F2F3EE;
+	border-bottom: 0;
+	margin-left: -15px;
+	margin-bottom: -15px;
+}
+
+.prints-btn {
+	width: 100%;
+	border: 3px dashed #DF5272;
+	border-radius: 0px;
+	background-color: transparent;
+	color: #DF5272;
+}
+
+.prints-btn:hover {
+	border: 3px dashed transparent;
+	background-color: #DF5272;
+	color: #F2F3EE;
 }
 /*end prints*/
 
