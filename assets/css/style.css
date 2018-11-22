@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+clear:after {
+	clear: both;
+	content: "";
+	display: block
+}
+
 /*start for testing only*/
 
 [class*="col-"] {
@@ -391,7 +397,42 @@ img[alt*="showcase-"] {
 
 
 /*start prints*/
+.product-card {
+	float: left;
+	border-radius: 0;
+	width: 100%;
+	margin: 1%;
+}
 
+.product-image-holder {
+	border-radius: 0;
+}
+
+.product-zoom {
+	display: block;
+	font-size: 20px;
+	line-height: 40px;
+	width: 100%;
+	padding: 5px auto;
+}
+
+.modal-btn {
+	border: 3px dashed #DF5272;
+	border-radius: 0px;
+	background-color: transparent;
+	color: #DF5272;
+}
+
+.modal-btn:hover {
+	border: 3px dashed transparent;
+	background-color: #DF5272;
+	color: #F2F3EE;
+}
+
+.modal-content, .modal-header {
+	border-radius: 0;
+	border: none;
+}
 /*end prints*/
 
 
@@ -423,6 +464,12 @@ img[alt*="showcase-"] {
 		width: 48%;
 	}
 	/*end clients*/
+
+	/*start prints*/
+	.product-card {
+		width: 48%;
+	}
+	/*end prints*/
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -455,6 +502,12 @@ img[alt*="showcase-"] {
 		width: 23%;
 	}
 	/*end clients*/
+
+	/*start prints*/
+	.product-card {
+		width: 31.3%;
+	}
+	/*end prints*/
 }
 
 
