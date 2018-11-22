@@ -334,6 +334,10 @@ img[alt*="showcase-"] {
 	text-decoration: none;
 	color: #E8983F;
 }
+
+.services-list {
+	margin-bottom: 16px;
+}
 /*end about*/
 
 
@@ -387,9 +391,8 @@ img[alt*="showcase-"] {
 }
 
 .logo {
-	width: 80%;
-	margin: 0 auto;
-	padding: 3px;
+	width: 75%;
+	margin: 5% auto 0 auto;
 }
 
 .card-title {
