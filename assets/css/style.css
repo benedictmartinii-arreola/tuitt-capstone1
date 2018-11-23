@@ -414,9 +414,11 @@ img[alt*="showcase-"] {
 
 /*start prints*/
 .product-card {
-	float: left;
+	text-align: center;
 	border-radius: 0;
-	width: 100%;
+	float: left;
+	border: 0;
+	width: 98%;
 	margin: 1%;
 }
 
@@ -491,6 +493,21 @@ img[alt*="showcase-"] {
 
 
 /*media queries*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	/*start clients*/
+	.card-logo {
+		width: 48%;
+	}
+	/*end clients*/
+
+	/*start prints*/
+	.product-card {
+		width: 48%;
+	}
+	/*end prints*/
+}
+
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 	/*start navbar*/
@@ -511,18 +528,6 @@ img[alt*="showcase-"] {
 	}
 	/*end about*/
 
-
-	/*start clients*/
-	.card-logo {
-		width: 48%;
-	}
-	/*end clients*/
-
-	/*start prints*/
-	.product-card {
-		width: 48%;
-	}
-	/*end prints*/
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -552,7 +557,7 @@ img[alt*="showcase-"] {
 
 	/*start clients*/
 	.card-logo {
-		width: 23%;
+		width: 31.3%;
 	}
 	/*end clients*/
 
